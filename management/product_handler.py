@@ -11,4 +11,10 @@ def get_product_by_id(id: int):
 
 
 def get_products_by_type(type: str):
-    return products[1]["_id"]
+    i = 0
+    products_list = []
+    for product in products:
+        if (product["type"] == type):
+            products_list.append(product)
+        i+1
+    return products_list
