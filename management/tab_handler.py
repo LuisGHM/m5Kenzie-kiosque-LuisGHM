@@ -9,4 +9,4 @@ def calculate_tab(*args):
             price_products.append(product["price"] * arg["amount"])
 
     result = sum(price_products)
-    return round(result, 2)
+    return {"subtotal": f"${round(result, 2)}"}
